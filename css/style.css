@@ -1,0 +1,225 @@
+@charset "utf-8";
+/* CSS Document */
+.header {
+  height: 92px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+.header .logo {
+  top: 12px;
+  left: 15px;
+  z-index: 2;
+}
+.header .index_nav {
+  right: 300px;
+  top: 0px;
+}
+.header .index_nav > ul {
+  text-align: center;
+}
+.header .index_nav > ul > li {
+  float: none;
+  display: inline-block;
+  height: 92px;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.header .index_nav > ul > li:nth-child(1) {
+  background: none;
+}
+.header .index_nav > ul > li.hasChild > a:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  margin-left: 40px;
+  top: 50%;
+  margin-top: -3px;
+  width: 12px;
+  height: 6px;
+  background: url(../images/huijian.png) no-repeat center center;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.header .index_nav > ul > li.hasChild > a:hover:before,
+.header .index_nav > ul > li.hasChild > a.on:before {
+  background: url(../images/huangjian.png) no-repeat center center;
+}
+.header .index_nav > ul > li > a {
+  display: block;
+  color: #333333;
+  font-size: 16px;
+  line-height: 92px;
+}
+.header .index_nav > ul > li > a.on,
+.header .index_nav > ul > li > a:hover {
+  color: #f8cb00;
+}
+.header .index_nav > ul > li .xl {
+  width: 120px;
+  position: absolute;
+  top: 92px;
+  left: 50%;
+  margin-left: -60px;
+  height: auto;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  display: none;
+  overflow: hidden;
+}
+.header .index_nav > ul > li .xl li {
+  border-top: solid 1px #fff;
+}
+.header .index_nav > ul > li .xl li:nth-child(1) {
+  border-top: 0;
+}
+.header .index_nav > ul > li .xl li.huangtiao {
+  content: '';
+  width: 3px;
+  height: 51px;
+  background: #f8cb00;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  z-index: 2;
+  margin-top: -1px;
+}
+.header .index_nav > ul > li .xl li a {
+  color: #ffffff;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.header .index_nav > ul > li .xl li a:hover {
+  color: #f8cb00;
+  background: rgba(0, 0, 0, 0.6);
+}
+.header .hotline {
+  width: 146px;
+  height: 30px;
+  line-height: 30px;
+  background: #f8cb00;
+  border-radius: 15px;
+  font-size: 16px;
+  color: #333333;
+  text-align: center;
+  right: 15px;
+  top: 32px;
+}
+.header .header_share {
+  right: 175px;
+  top: 33px;
+}
+.header .header_share a {
+  border: solid 1px #909090;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 100%;
+  margin-left: 10px;
+  opacity: 0.8;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.header .header_share a span {
+  width: 100px;
+  height: 100px;
+  top: 40px;
+  left: 50%;
+  margin-left: -50px;
+  display: none;
+}
+.header .header_share a span img {
+  width: 100%;
+}
+.header .header_share a:hover {
+  opacity: 1;
+}
+.menu {
+  font-size: 22px;
+  position: absolute;
+  right: 15px;
+  top: 18px;
+  color: #000;
+  border: solid 1px #000;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+  z-index: 1;
+}
+.hsbtm {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: none;
+}
+.menu_close {
+  font-size: 14px;
+  padding: 10px;
+  background: #fff;
+  color: #000;
+  position: absolute;
+  top: 0px;
+  left: -39px;
+  z-index: 11;
+  display: none;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+}
+.banner {
+  position: fixed;
+  top: 92px;
+  left: 0;
+  width: 100%;
+}
+.banner .owl-theme .owl-controls {
+  margin-top: 0;
+}
+.banner #owl-demo1 {
+  height: 720px;
+}
+.banner #owl-demo1 .owl-dots {
+  display: block!important;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.banner #owl-demo1 .owl-dots .owl-dot {
+  display: inline-block;
+  float: none;
+  margin-left: 12px;
+  margin-right: 12px;
+  width: 60px;
+  height: 4px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  background: #fff;
+}
+.banner #owl-demo1 .owl-dots .owl-dot.active {
+  background: #f8cb00;
+}
+.banner #owl-demo1 .item {
+  display: block;
+  height: 700px;
+}
+.banner #owl-demo1 .item img {
+  display: none;
+  width: 100%;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style_wt.css" />
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script language="javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/resLoader.js"></script>
+    <script async="" src="js/picturefill.min.js"></script>
+    <script language="javascript" src="js/js.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="header">
+        <div class="container rel">
+            <a href="#" class="logo abs"><img src="images/logo.png" class="db" alt=""></a>
+            <div class="hsbtm"></div>
+            <span class="glyphicon glyphicon-menu-hamburger menu" aria-hidden="true"></span>
+            <div class="index_nav trans abs">
+                <span class="glyphicon glyphicon-remove menu_close" aria-hidden="true"></span>
+                <ul class="fix">
+                    <li class="fl"><a href="#" class="db trans">首1页1</a></li>
+                    <li class="fl"><a href="#" class="db trans">产品中心</a></li>
+                    <li class="fl"><a href="#" class="db trans">粉丝评测</a></li>
+                    <li class="fl"><a href="#" class="db trans">肽有研究</a>
+                        <ul class="xl">
+                            <li><a href="#">海外全真插班</a></li>
+                            <li><a href="#">国际语言营地</a></li>
+                            <li><a href="#">特色主题课程</a></li>
+                            <li><a href="#">国际义工旅行</a></li>
+                            <li><a href="#">海外带薪实习</a></li>
+                            <li class="abs huangtiao trans"></li>
+                        </ul>
+                    </li>
+                    <li class="fl"><a href="#" class="db trans">研发生产</a></li>
+                    <li class="fl"><a href="#" class="db trans">关于我们</a></li>
+                </ul>
+            </div>
+            <div class="hotline abs">
+                <img src="images/hotline.png" class="vmid mr5" alt="">0311-8899889
+            </div>
+            <div class="header_share abs">
+                <a href="#" class="trans dib rel"><img src="images/toptb1.png" class="vmid" alt=""></a>
+                <a href="#" class="trans dib rel">
+                    <img src="images/toptb2.png" class="vmid" alt="">
+                    <span class="abs"><img src="images/ewm1.jpg" class="db" alt=""></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div id="owl-demo1" class="owl-carousel">
+            <a class="item db" href="#" style="background:url(images/banner.jpg) no-repeat center center;background-size:cover!important;">
+                <img src="images/xbanner.jpg" alt="">
+            </a>
+            <a class="item db" href="#" style="background:url(images/banner.jpg) no-repeat center center;background-size:cover!important;">
+                <img src="images/xbanner.jpg" alt="">
+            </a>
+            
+        </div>
+        <script>
+            $(function(){
+                if($('.banner .item').size()==1){
+                    $('.banner .owl-carousel').show();   
+                }
+                else{
+                    var owl=$('#owl-demo1');
+                    $('#owl-demo1').owlCarousel({
+                        loop:true,
+                        items:1,
+                        nav:false,
+                        autoplay:true,
+                        autoplayTimeout:5000,
+                        autoplayHoverPause:true,
+                    });
+                }
+                
+            });
+        </script>
+    </div>
+    <div class="index_main1 rel1" style="height:1000px;margin-top:812px"></div>
+    <!-- <div class="owl-carousel owl-theme" id="owl-demo5">
+        <div class="item">
+            <a href="#" class="db rel">
+                <img src="images/guoqi1.png">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#" class="db rel">
+                <img src="images/guoqi2.png">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#" class="db rel">
+                <img src="images/guoqi3.png">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#" class="db rel">
+                <img src="images/guoqi4.png">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#" class="db rel">
+                <img src="images/guoqi5.png">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#" class="db rel">
+                <img src="images/guoqi6.png">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#" class="db rel">
+                <img src="images/guoqi7.png">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#" class="db rel">
+                <img src="images/guoqi8.png">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#" class="db rel">
+                <img src="images/guoqi9.png">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#" class="db rel">
+                <img src="images/guoqi10.png">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#" class="db rel">
+                <img src="images/guoqi11.png">
+            </a>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            $('#owl-demo5').owlCarousel({
+                loop:true,
+                margin:5,
+                nav:false,
+                responsive:{
+                    0:{
+                        items:5
+                    },
+                    768:{
+                        items:8
+                    },
+                    1000:{
+                        items:11
+                    }
+                }
+            })
+            // $('#owl-demo5').on('changed.owl.carousel', function(event) {
+            //     console.log(event.item.index)
+            // }) 
+            // $('.next_btn2').click(function() {
+            //     $('#owl-demo5').trigger('next.owl.carousel');
+            // })
+            // // Go to the previous item
+            // $('.prev_btn2').click(function() {
+            //     // With optional speed parameter
+            //     // Parameters has to be in square bracket '[]'
+            //     $('#owl-demo5').trigger('prev.owl.carousel');
+            // })
+        })
+    </script> -->
+</body>
+</html>
